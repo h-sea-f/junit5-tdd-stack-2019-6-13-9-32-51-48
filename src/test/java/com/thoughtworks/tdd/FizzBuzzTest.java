@@ -71,4 +71,15 @@ public class FizzBuzzTest {
         //Then
         assertEquals(result, "Buzz");
     }
+
+    @Test
+    @DisplayName("should return FizzBuzz when convert given 15")
+    public void should_return_FizzBuzz_when_convert_given_15() {
+        //Given
+        int number = 15;
+        //when
+        String result = new FizzBuzz().convert(number);
+        //Then
+        assertEquals(result, "FizzBuzz");
+    }
 }

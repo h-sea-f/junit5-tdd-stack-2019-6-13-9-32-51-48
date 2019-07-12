@@ -104,4 +104,26 @@ public class FizzBuzzTest {
         //Then
         assertEquals(result, "FizzBuzz");
     }
+
+    @Test
+    @DisplayName("should return Fizz when convert given 33")
+    public void should_return_Fizz_when_convert_given_33() {
+        //Given
+        int number = 33;
+        //when
+        String result = new FizzBuzz().convert(number);
+        //Then
+        assertEquals(result, "Fizz");
+    }
+
+    @Test
+    @DisplayName("should return Buzz when convert given 35")
+    public void should_return_Buzz_when_convert_given_35() {
+        //Given
+        int number = 35;
+        //when
+        String result = new FizzBuzz().convert(number);
+        //Then
+        assertEquals(result, "Buzz");
+    }
 }

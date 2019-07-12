@@ -16,4 +16,15 @@ public class FizzBuzzTest {
         //Then
         assertEquals(result,"1");
     }
+
+    @Test
+    @DisplayName("should return 2 when convert given 2")
+    public void should_return_2_when_convert_given_2(){
+        //Given
+        int number=2;
+        //when
+        String result=new FizzBuzz().convert(number);
+        //Then
+        assertEquals(result,"2");
+    }
 }

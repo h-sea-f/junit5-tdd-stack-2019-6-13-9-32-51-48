@@ -38,4 +38,15 @@ public class FizzBuzzTest {
         //Then
         assertEquals(result,"Fizz");
     }
+
+    @Test
+    @DisplayName("should return Buzz when convert given 5")
+    public void should_return_Buzz_when_convert_given_5(){
+        //Given
+        int number=5;
+        //when
+        String result=new FizzBuzz().convert(number);
+        //Then
+        assertEquals(result,"Buzz");
+    }
 }

@@ -49,4 +49,15 @@ public class FizzBuzzTest {
         //Then
         assertEquals(result,"Buzz");
     }
+
+    @Test
+    @DisplayName("should return Fizz when convert given 6")
+    public void should_return_Fizz_when_convert_given_6(){
+        //Given
+        int number=6;
+        //when
+        String result=new FizzBuzz().convert(number);
+        //Then
+        assertEquals(result,"Fizz");
+    }
 }

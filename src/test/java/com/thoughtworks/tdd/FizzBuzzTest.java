@@ -85,12 +85,23 @@ public class FizzBuzzTest {
 
     @Test
     @DisplayName("should return 17 when convert given 17")
-    public void should_return_FizzBuzz_when_convert_given_17() {
+    public void should_return_17_when_convert_given_17() {
         //Given
         int number = 17;
         //when
         String result = new FizzBuzz().convert(number);
         //Then
         assertEquals(result, "17");
+    }
+
+    @Test
+    @DisplayName("should return FizzBuzz when convert given 30")
+    public void should_return_FizzBuzz_when_convert_given_30() {
+        //Given
+        int number = 30;
+        //when
+        String result = new FizzBuzz().convert(number);
+        //Then
+        assertEquals(result, "FizzBuzz");
     }
 }
